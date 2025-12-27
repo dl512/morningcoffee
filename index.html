@@ -56,7 +56,7 @@
                         <div class="template-header">
                             <h3>Global Headlines</h3>
                             <button class="expand-toggle" onclick="toggleTemplate(this, 'global-headlines')">
-                                <span>View Template</span>
+                                <span>View Sample</span>
                                 <span class="toggle-icon">▼</span>
                             </button>
                         </div>
@@ -97,7 +97,7 @@ Send it to my email list with separate English and Chinese recipient lists.</cod
                         <div class="template-header">
                             <h3>Market Briefing</h3>
                             <button class="expand-toggle" onclick="toggleTemplate(this, 'market-briefing')">
-                                <span>View Template</span>
+                                <span>View Sample</span>
                                 <span class="toggle-icon">▼</span>
                             </button>
                         </div>
@@ -203,7 +203,7 @@ Send it daily to my email.</code></pre>
                     <span class="step-number">3</span>
                     <h2>Subscribe</h2>
                 </div>
-                <p class="step-description">Complete your subscription to start receiving your personalized newsletter</p>
+                <p class="step-description">Complete the form below to start receiving your personalized newsletter</p>
                 <div class="subscribe-buttons">
                     <a href="https://forms.gle/RYC8R6Nzxc4KnLqe6" class="subscribe-button primary" target="_blank" rel="noopener noreferrer">
                         Subscribe Now
@@ -232,11 +232,11 @@ Send it daily to my email.</code></pre>
             if (isOpen) {
                 templatePreview.style.display = 'none';
                 icon.textContent = '▼';
-                button.querySelector('span:first-child').textContent = 'View Template';
+                button.querySelector('span:first-child').textContent = 'View Sample';
             } else {
                 templatePreview.style.display = 'block';
                 icon.textContent = '▲';
-                button.querySelector('span:first-child').textContent = 'Hide Template';
+                button.querySelector('span:first-child').textContent = 'Hide Sample';
                 
                 // Load newsletter if not already loaded
                 const contentDiv = templatePreview.querySelector('.newsletter-content');
